@@ -1,3 +1,5 @@
+![alt tag](https://www.polymer-project.org/images/logos/p-logo.png)
+
 # Polymer-welcome-pack
 
   Conjunto de ejemplos y definiciones para comenzar a trabajar con la librería basada en WebComponents conocida como Polymer.
