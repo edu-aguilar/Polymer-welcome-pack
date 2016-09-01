@@ -53,7 +53,7 @@ Crear un fichero nuevo en la carpeta src/ llamado *my-new-view.html* e incluir e
   </script>
 </dom-module>
 ```
-Analizando nuestra nueva página, vemos cómo en ella se distribuye la declaración de la misma bajo el tag <dom-module>, estilos y HTML que contiene bajo el tag <template> y la creación del elemento propiamente en el tag script. Por ahora, nuestro template únicamente contiene una etiqueta <h1>, pero avancemos poco a poco.
+Analizando nuestra nueva página, vemos cómo en ella se distribuye la declaración de la misma bajo el tag dom-module, estilos y HTML que contiene bajo el tag template y la creación del elemento propiamente en el tag script. Por ahora, nuestro template únicamente contiene una etiqueta h1, pero avancemos poco a poco.
 
 ##### Inluir nuestro elemento al proyecto
 Ya tenemos nuestra nueva página creada, ahora tenemos que añadirla a nuestra página principal. Para ello, haremos lo mismo que con las otras páginas:
