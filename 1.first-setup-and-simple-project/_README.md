@@ -29,7 +29,7 @@ En este apartado, incluiremos una nueva página a nuestro proyecto. Los pasos se
 ##### Crear el elemento para nuestra nueva página
 Crear un fichero nuevo en la carpeta src/ llamado *my-new-view.html* e incluir el siguiente código:
 
-```
+```html
 <link rel="import" href="../bower_components/polymer/polymer.html">
 
 <dom-module id="new-view">
@@ -59,7 +59,7 @@ Analizando nuestra nueva página, vemos cómo en ella se distribuye la declaraci
 Ya tenemos nuestra nueva página creada, ahora tenemos que añadirla a nuestra página principal. Para ello, haremos lo mismo que con las otras páginas:
 
   - En el fichero src/my-app.html, nos situamos en la siguiente parte del código:
-      ```
+      ```html
       <iron-pages
         selected="[[page]]"
         attr-for-selected="name"
@@ -72,18 +72,18 @@ Ya tenemos nuestra nueva página creada, ahora tenemos que añadirla a nuestra p
     </iron-pages>
       ```
   - Incluimos la nueva página en el contenedor de la página principal:
-    ```
+    ```html
     <new-view name="new-view"></new-view>
     ```
   - Añadimos un enlace para que el usuario pueda acceder a nuestra nueva página dentro del tag <iron-selector>:
-    ```
+    ```html
     <a name="new-view" href="/new-view">New View</a>
     ```
 Listo, ahora al recargar la página, en nuestro menú lateral aparecerá una nueva opción, la cual nos lleva a la página que hemos creado.
 
 Por último, aunque no es necesario realmente(solo es necesario si vamos a hacer un build y posterior despliegue), incluímos en el fichero *polymer.json* nuestra nueva página en el array de *fragments*, con lo que quedaría de la siguiente manera:
 
-```
+```javascript
 "fragments": [
     "src/my-view1.html",
     "src/my-view2.html",
